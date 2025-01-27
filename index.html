@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="/css/style.css" rel="stylesheet" />
+		<title>Document</title>
+	</head>
+	<body>
+		<header class="main-header">
+			<h1>KALKULATOR BMI</h1>
+		</header>
+		<div class="container">
+			<!-- Left Content -->
+			<section class="left">
+				<article>
+					<p>
+						BMI adalah perhitungan matematis yang membandingkan berat badan
+						dalam kilogram dengan kuadrat tinggi badan dalam meter. Meskipun
+						sederhana, BMI banyak digunakan di seluruh dunia karena
+						kemudahanannya dalam memberikan gambaran umum tentang status berat
+						badan seseorang. Rumus perhitungan BMI:<br />
+						BMI = Berat badan (kg) / Tinggi badan (m)<br />
+						BMI adalah salah satu cara termudah untuk mengevaluasi risiko
+						kesehatan yang berhubungan dengan berat badan.
+					</p>
+					<br />
+					<span><h3>Berikut adalah kalkulator BMI</h3></span>
+				</article>
+				<br />
+				<!-- FORM INPUT -->
+				<form>
+					<div class="jk">
+						<label for="cowo">Laki-laki</label>
+						<input type="radio" name="gender" id="cowo" />
+						<label for="cewe">Perempuan</label>
+						<input type="radio" name="gender" id="cewe" />
+					</div>
+
+					<div class="input">
+						<label for="inputTb">Input Tinggi Badan (cm)</label><br />
+						<input type="number" id="inputTb" name="inputTb" /><br />
+						<label for="inputBb">Input Berat Badan (kg)</label><br />
+						<input type="number" id="inputBb" name="inputBb" /><br />
+						<label for="inputUmur">Input Umur</label><br />
+						<input type="number" id="inputUmur" /><br />
+					</div>
+					<button onclick="hitung()">Hitung</button>
+					<button onclick="reset()">Reset</button>
+				</form>
+				<br />
+				<article>
+					<p>Untuk melihat hasilnya, lihat di sisi kanan.</p>
+				</article>
+			</section>
+
+			<!-- Left Content -->
+			<section class="right">
+				<div class="hasil">
+					<header>
+						<h2>HASIL</h2>
+					</header>
+					<div id="result">
+				</div>
+				<br />
+				<br />
+				<table>
+					<tr>
+						<th>Kategori</th>
+						<th>BMI</th>
+					</tr>
+					<tr>
+						<td>Kurus</td>
+						<td>18,5</td>
+					</tr>
+
+					<tr>
+						<td>Normal</td>
+						<td>18,5 – 24,9</td>
+					</tr>
+
+					<tr>
+						<td>Berat badan berlebih</td>
+						<td>25 – 29,9</td>
+					</tr>
+
+					<tr>
+						<td>Obesitas Kelas 1</td>
+						<td>30 – 34,9</td>
+					</tr>
+
+					<tr>
+						<td>Obesitas Kelas 2</td>
+						<td>35 – 39,9</td>
+					</tr>
+
+					<tr>
+						<td>Obesitas Kelas 3</td>
+						<td>≥ 40</td>
+					</tr>
+				</table>
+				<br />
+				<p>
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam ex
+					voluptas beatae. Necessitatibus doloremque odio libero atque ab iste,
+					alias consectetur ipsum dignissimos eius. Maxime tempore non aperiam
+					recusandae ratione.
+				</p>
+			</section>
+		</div>
+		<footer>
+			<p>@mridwanwijaya_ 2025</p>
+		</footer>
+		<script src="/js/script.js"></script>
+	</body>
+</html>
